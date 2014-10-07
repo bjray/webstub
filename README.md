@@ -1,5 +1,14 @@
 To use:
 
+- fork this repo
+- clone **your** repo
+
+  ```bash
+  cd /path/to/projects/dir
+  git clone git@github.com:$your_github_username/webstub.git
+  cd webstub
+  ```
+
 - (optional) install rvm
 
   ```bash
@@ -11,18 +20,17 @@ To use:
   ```bash
   rvm install ruby-2.1.2
   ```
-
-- install the bundler gem and run it
+  
+- install the bundler and foreman gems
 
   ```bash
-  cd /path/to/this/directory
-  gem install bundler && bundle install
+  gem install bundler foreman 
   ```
 
-- also install foreman
+- install dependencies
 
   ```bash
-  gem install foreman
+  bundle install
   ```
 
 - run foreman
