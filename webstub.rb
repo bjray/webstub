@@ -33,6 +33,10 @@ class Webstub < Sinatra::Base
     { foo: { id: 2, name: "ted" } }.to_json # this is the object just created by the POST
   end
 
+  get '/reps' do
+    {Reps:[{lastName: "Doe", firstName: "John", userId: 34},{ lastName: "Kennedy", firstName: "Jacob", userId: 86},{lastName: "Smith", firstName: "Jane", userId: 73}]}.to_json
+  end
+
   run! if app_file = $0
 end
 
